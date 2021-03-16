@@ -1,0 +1,17 @@
+.todoList,
+.todoListItemsContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.caption {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 1240px) { 
+    .todoList {
+        max-width: 768px;
+    }
+}

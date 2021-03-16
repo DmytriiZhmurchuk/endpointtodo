@@ -1,0 +1,38 @@
+$border-color: #ccc;
+$hover-color: rgb(241, 216, 132);
+$completed-color: rgb(181, 255, 230);
+$expired-color: rgb(253, 152, 152);
+
+.todoListItem {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &:hover {
+        background-color: $hover-color;
+    }
+    &.completed {
+        text-decoration: line-through;
+        background: $completed-color;
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+    &.expired {
+        background: $expired-color;
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
+.todorow {
+    display: flex;
+    border-bottom: 1px solid $border-color;
+}
+.completeControl,
+.todoDescription,
+.todoDueDate {
+    padding: 10px;
+}
+.todoDescription {
+    flex: 1;
+}
